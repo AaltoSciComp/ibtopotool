@@ -25,3 +25,12 @@ pip, like "pip install -U --user python-hostlist".
 
 To generate graphviz output (the default), one needs the pydot
 library.
+
+
+Usage example on triton.aalto.fi
+================================
+
+1. run `ibnetdiscover > ibnetdiscover.txt` on the login node (as root?)
+2. install dependencies of ibtopotool, e.g. `module load anaconda` and `pip install --user pydot`
+3. run `python ibtopotool.py ibnetdiscover.txt > ibnetdiscover.graphviz`
+4. run `circo -Tsvg -O ibnetdiscover.graphviz`
