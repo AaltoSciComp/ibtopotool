@@ -55,6 +55,7 @@ def get_host_color(hostname):
     colors['pe']='blue'
     colors['c']='green'
     colors['skl']='magenta'
+    colors['ckl']='purple'
     hn = re.sub("[^a-z]", "", hostname)
     return colors.get(hn,'black')
 
